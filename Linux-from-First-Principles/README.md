@@ -138,7 +138,7 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 07 — Signals
 - [x] 08 — File Descriptors
 - [x] 09 — Files and Filesystems
-- [ ] 10 — Virtual Memory
+- [x] 10 — Virtual Memory
 - [ ] 11 — Memory Management
 - [ ] 12 — ELF and Program Loading
 - [ ] 13 — Dynamic Linking

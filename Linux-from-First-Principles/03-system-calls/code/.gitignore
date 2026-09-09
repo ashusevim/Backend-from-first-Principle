@@ -1,0 +1,7 @@
+# Built by make (keep in sync with Makefile PROGS)
+hello_libc
+hello_raw
+hello_asm
+errno_demo
+vdso_demo
+mini-strace

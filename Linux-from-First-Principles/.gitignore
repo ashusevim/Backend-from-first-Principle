@@ -1,0 +1,7 @@
+# Build artifacts (each code/ dir also ignores its own binaries explicitly)
+*.o
+*.d
+
+# Editor / OS noise
+*~
+.DS_Store

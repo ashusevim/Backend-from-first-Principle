@@ -1,0 +1,3 @@
+# Built by make (keep in sync with Makefile PROGS)
+procself
+ppid_chain

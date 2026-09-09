@@ -132,8 +132,8 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 01 — Linux Fundamentals
 - [x] 02 — User Space and Kernel
 - [x] 03 — System Calls
-- [ ] 04 — Processes
-- [ ] 05 — Process Creation
+- [x] 04 — Processes
+- [x] 05 — Process Creation
 - [ ] 06 — Process Scheduling
 - [ ] 07 — Signals
 - [ ] 08 — File Descriptors

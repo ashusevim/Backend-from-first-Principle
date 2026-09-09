@@ -1,0 +1,4 @@
+# Built by make (keep in sync with Makefile PROGS)
+identity
+argenv
+list_fds

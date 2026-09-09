@@ -4,7 +4,7 @@
 
 A complete, practical, experiment-driven guide to **how Linux actually works underneath the commands** — processes, system calls, memory, files, networking, threads, containers, and the kernel itself.
 
-This is a companion track to [Backend from First Principles](../README.md) (the root of this repo). That track teaches you to *build* backend systems; this track teaches you the *machine those systems run on*.
+This is a companion track to [Backend from First Principles](https://github.com/ashusevim/Backend-from-first-Principle). That track teaches you to *build* backend systems; this track teaches you the *machine those systems run on*.
 
 ---
 
@@ -134,8 +134,8 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 03 — System Calls
 - [x] 04 — Processes
 - [x] 05 — Process Creation
-- [ ] 06 — Process Scheduling
-- [ ] 07 — Signals
+- [x] 06 — Process Scheduling
+- [x] 07 — Signals
 - [ ] 08 — File Descriptors
 - [ ] 09 — Files and Filesystems
 - [ ] 10 — Virtual Memory
@@ -177,8 +177,8 @@ This track is built incrementally, section by section, with every program compil
 - Diagrams for complicated flows.
 - Fixes to explanations that are shallow or wrong — with evidence.
 
-Open an issue or PR on the parent repository.
+Open an [issue](https://github.com/ashusevim/Linux-from-First-Principles/issues) or [pull request](https://github.com/ashusevim/Linux-from-First-Principles/pulls).
 
 ## License
 
-Same license as the parent repository.
+Same license as the [parent project](https://github.com/ashusevim/Backend-from-first-Principle).

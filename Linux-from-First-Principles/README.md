@@ -139,7 +139,7 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 08 — File Descriptors
 - [x] 09 — Files and Filesystems
 - [x] 10 — Virtual Memory
-- [ ] 11 — Memory Management
+- [x] 11 — Memory Management
 - [ ] 12 — ELF and Program Loading
 - [ ] 13 — Dynamic Linking
 - [ ] 14 — Threads

@@ -140,8 +140,8 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 09 — Files and Filesystems
 - [x] 10 — Virtual Memory
 - [x] 11 — Memory Management
-- [ ] 12 — ELF and Program Loading
-- [ ] 13 — Dynamic Linking
+- [x] 12 — ELF and Program Loading
+- [x] 13 — Dynamic Linking
 - [ ] 14 — Threads
 - [ ] 15 — Concurrency and Synchronization
 - [ ] 16 — Inter-Process Communication

@@ -27,9 +27,9 @@ taskset -c 0 "$CODE/spinner" 3 >/tmp/duo2.out 2>&1 &
 wait
 cat /tmp/duo1.out /tmp/duo2.out
 awk -v solo="$SOLO" 'NR==1{d1=$5} NR==2{d2=$5} END{
-  # NOTE: compute ratio in a variable FIRST — a bare ">" inside printf's
-  # argument list means REDIRECT in awk (it once wrote this very line to a
-  # file literally named "1.00478" instead of printing it). Classic footgun.
+  # NOTE: compute ratio in a variable FIRST. A bare greater-than inside an
+  # awk print statement means REDIRECT: it once wrote this very verdict to a
+  # file literally named 1.00478 instead of printing it. Classic footgun.
   ratio = d1>d2 ? d1/d2 : d2/d1;
   printf "solo=%d, duo=(%d, %d)\n", solo, d1, d2;
   printf "each duo share = %.0f%% of solo (expect ~50%%), duo ratio = %.2f (expect ~1.00)\n",

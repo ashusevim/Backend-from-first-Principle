@@ -22,7 +22,7 @@ address-range          perms offset   dev   inode   pathname
 |-------|---------|
 | `[heap]` | classic brk heap (§11: small `malloc`s) |
 | `[stack]` | main thread's stack (grows down from high user) |
-| `[stack:TID]` | another thread's stack (one per thread, §14) |
+| (thread stacks: UNLABELED) | plain 8M anon + 4K guard — NO tag on kernel 6.1 (newer kernels may print [stack:TID]; §14.2) |
 | `[vdso]` | kernel-donated fast syscalls (`gettimeofday` with no trap — §03's `vdso_demo` called HERE) |
 | `[vvar]` | vdso's data page (time vars the kernel keeps fresh) |
 | `[vsyscall]` | legacy trap trampoline (emulated, near-retired) |

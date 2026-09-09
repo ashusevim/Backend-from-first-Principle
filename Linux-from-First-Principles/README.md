@@ -142,7 +142,7 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 11 — Memory Management
 - [x] 12 — ELF and Program Loading
 - [x] 13 — Dynamic Linking
-- [ ] 14 — Threads
+- [x] 14 — Threads
 - [ ] 15 — Concurrency and Synchronization
 - [ ] 16 — Inter-Process Communication
 - [ ] 17 — Pipes and FIFOs

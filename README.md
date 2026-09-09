@@ -1,5 +1,7 @@
 # Backend from First Principles
 
+> 🐧 New: the companion **[Linux from First Principles](Linux-from-First-Principles/)** track has started — how Linux actually works underneath the commands: syscalls, processes, memory, files, networking, containers, and the kernel. Sections 01–03 are complete.
+
 Welcome to the **Backend from First Principles** documentation repository! 
 
 This repository contains a comprehensive collection of notes, code snippets, and explanations covering fundamental and advanced concepts in backend engineering. The goal of this series is to break down complex backend topics into understandable, foundational principles.

@@ -136,8 +136,8 @@ Detailed progression + dependencies: [ROADMAP.md](ROADMAP.md).
 - [x] 05 — Process Creation
 - [x] 06 — Process Scheduling
 - [x] 07 — Signals
-- [ ] 08 — File Descriptors
-- [ ] 09 — Files and Filesystems
+- [x] 08 — File Descriptors
+- [x] 09 — Files and Filesystems
 - [ ] 10 — Virtual Memory
 - [ ] 11 — Memory Management
 - [ ] 12 — ELF and Program Loading

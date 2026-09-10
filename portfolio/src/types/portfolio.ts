@@ -94,7 +94,7 @@ export type TemplateId = (typeof templateIds)[number];
 export const designSchema = z.object({
   template: z.enum(templateIds).default("developer"),
   theme: z.enum(["light", "dark", "system"]).default("system"),
-  accent: z.string().default("indigo"),
+  accent: z.string().default("orange"),
   font: z.string().default("inter"),
   spacing: z.enum(["compact", "comfortable", "spacious"]).default("comfortable"),
   radius: z.enum(["sharp", "medium", "rounded"]).default("medium"),
@@ -150,7 +150,7 @@ export const emptyPortfolio = (): Portfolio => ({
   design: {
     template: "developer",
     theme: "system",
-    accent: "indigo",
+    accent: "orange",
     font: "inter",
     spacing: "comfortable",
     radius: "medium",

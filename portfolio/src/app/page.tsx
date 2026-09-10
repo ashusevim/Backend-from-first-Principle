@@ -18,14 +18,21 @@ export default function LandingPage() {
   return (
     <main>
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-4 pb-16 pt-14 sm:px-6 sm:pt-20">
+      <section className="relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 -top-40 h-[480px]"
+          style={{ background: "radial-gradient(52rem 22rem at 50% 0%, hsl(var(--primary) / 0.12), transparent 70%)" }}
+        />
+        <div className="relative mx-auto max-w-6xl px-4 pb-16 pt-14 sm:px-6 sm:pt-20">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <p className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
-              <Sparkles className="h-3 w-3 text-primary" /> Made for developers · No account needed
+            <p className="mb-4 inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium">
+              <Sparkles className="h-3 w-3 text-primary" />
+              <span className="text-muted-foreground">Made for developers · No account needed</span>
             </p>
             <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
-              Build a portfolio that gets you noticed.
+              Build a portfolio that gets you <span className="text-primary">noticed.</span>
             </h1>
             <p className="mt-4 max-w-lg text-lg text-muted-foreground">
               Create a professional developer portfolio in minutes. Import your GitHub,
@@ -54,20 +61,24 @@ export default function LandingPage() {
           </div>
           <HeroPreview />
         </div>
+        </div>
       </section>
 
       {/* HOW IT WORKS */}
       <section className="border-y border-border bg-card/50">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-          <h2 className="text-center text-2xl font-bold tracking-tight">From zero to hired in three steps</h2>
+          <p className="text-center font-mono text-xs uppercase tracking-[0.18em] text-primary">How it works</p>
+          <h2 className="mt-2 text-center text-2xl font-bold tracking-tight">From zero to hired in three steps</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
               { icon: Import, t: "1. Add your information", d: "Type it in, import from GitHub, or upload your resume. Everything stays editable." },
               { icon: Palette, t: "2. Customize your portfolio", d: "Pick one of four developer-grade templates, tune colors, fonts and layout — live." },
               { icon: Download, t: "3. Export and publish", d: "Download a standalone site, a tidy ZIP, or a clean PDF. Host it anywhere." },
             ].map((s) => (
-              <div key={s.t} className="rounded-lg border border-border bg-card p-5">
-                <s.icon className="h-5 w-5 text-primary" />
+              <div key={s.t} className="rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/50">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary/10">
+                  <s.icon className="h-4 w-4 text-primary" />
+                </span>
                 <h3 className="mt-3 font-semibold">{s.t}</h3>
                 <p className="mt-1.5 text-sm text-muted-foreground">{s.d}</p>
               </div>
@@ -80,7 +91,8 @@ export default function LandingPage() {
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="text-2xl font-bold tracking-tight">Four templates. Zero filler.</h2>
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">Templates</p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight">Four templates. Zero filler.</h2>
             <p className="mt-1 text-muted-foreground">Same data, four personalities. Switch anytime — nothing is lost.</p>
           </div>
           <Link href="/templates"><Button variant="outline" size="sm">See all templates <ArrowRight className="h-3.5 w-3.5" /></Button></Link>
@@ -111,8 +123,10 @@ export default function LandingPage() {
               { icon: Download, t: "PDF export", d: "A clean, print-ready version for applications and recruiters." },
               { icon: Zap, t: "No account required", d: "Open the builder and start. Done is better than signed-up." },
             ].map((f) => (
-              <div key={f.t} className="rounded-lg border border-border bg-card p-5">
-                <f.icon className="h-5 w-5 text-primary" />
+              <div key={f.t} className="rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/50">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary/10">
+                  <f.icon className="h-4 w-4 text-primary" />
+                </span>
                 <h3 className="mt-3 text-sm font-semibold">{f.t}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{f.d}</p>
               </div>

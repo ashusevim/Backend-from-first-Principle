@@ -154,7 +154,7 @@ export function DesignPanel({ p, update }: { p: Portfolio; update: PortfolioUpda
 }
 
 function MiniPreview({ id, accent, dark }: { id: TemplateId; accent: string; dark: boolean }) {
-  const hex = ACCENTS.find((a) => a.id === accent)?.hex ?? "#4f46e5";
+  const hex = ACCENTS.find((a) => a.id === accent)?.hex ?? "#ea580c";
   const line = dark ? "#26262b" : "#e8e8ec";
   const fg = dark ? "#f4f4f5" : "#17171c";
   return (

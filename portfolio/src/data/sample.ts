@@ -121,7 +121,7 @@ export function samplePortfolio(): Portfolio {
     design: {
       template: "developer",
       theme: "system",
-      accent: "indigo",
+      accent: "orange",
       font: "inter",
       spacing: "comfortable",
       radius: "medium",

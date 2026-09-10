@@ -1,4 +1,5 @@
 export const ACCENTS: { id: string; label: string; hex: string; hexDark: string }[] = [
+  { id: "orange", label: "Orange", hex: "#ea580c", hexDark: "#fb923c" },
   { id: "indigo", label: "Indigo", hex: "#4f46e5", hexDark: "#818cf8" },
   { id: "blue", label: "Blue", hex: "#2563eb", hexDark: "#60a5fa" },
   { id: "emerald", label: "Emerald", hex: "#059669", hexDark: "#34d399" },

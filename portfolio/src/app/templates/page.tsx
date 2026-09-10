@@ -24,7 +24,7 @@ export default function TemplatesPage() {
     <main className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
       <h1 className="text-3xl font-extrabold tracking-tight">Templates</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Four crafted starting points, one shared data model. Switching templates never
+        Eight crafted starting points, one shared data model. Switching templates never
         touches your content — pick the vibe, keep the substance.
       </p>
 

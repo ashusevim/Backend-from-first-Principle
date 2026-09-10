@@ -7,7 +7,7 @@ import { PortfolioTemplate } from "@/components/templates/registry";
 import type { TemplateId } from "@/types/portfolio";
 import { cn } from "@/lib/utils";
 
-const TABS: TemplateId[] = ["developer", "minimal", "modern", "terminal"];
+const TABS: TemplateId[] = ["developer", "minimal", "modern", "terminal", "editorial", "sidebar", "bento", "compact"];
 
 export function HeroPreview() {
   const [tab, setTab] = useState<TemplateId>("developer");
@@ -27,7 +27,7 @@ export function HeroPreview() {
           <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         </div>
-        <div className="flex gap-1" role="tablist" aria-label="Preview template">
+        <div className="slim-scroll flex max-w-[60%] gap-1 overflow-x-auto" role="tablist" aria-label="Preview template">
           {TABS.map((t) => (
             <button
               key={t}
@@ -35,7 +35,7 @@ export function HeroPreview() {
               aria-selected={tab === t}
               onClick={() => setTab(t)}
               className={cn(
-                "rounded-md px-2.5 py-1 text-xs font-medium capitalize",
+                "shrink-0 rounded-md px-2.5 py-1 text-xs font-medium capitalize",
                 tab === t ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-accent"
               )}
             >

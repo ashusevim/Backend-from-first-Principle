@@ -49,7 +49,7 @@ export default function LandingPage() {
             <dl className="mt-8 flex gap-6 text-sm">
               {[
                 ["5 min", "median build time"],
-                ["4", "crafted templates"],
+                ["8", "crafted templates"],
                 ["0", "accounts required"],
               ].map(([v, l]) => (
                 <div key={l}>
@@ -72,7 +72,7 @@ export default function LandingPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
               { icon: Import, t: "1. Add your information", d: "Type it in, import from GitHub, or upload your resume. Everything stays editable." },
-              { icon: Palette, t: "2. Customize your portfolio", d: "Pick one of four developer-grade templates, tune colors, fonts and layout — live." },
+              { icon: Palette, t: "2. Customize your portfolio", d: "Pick one of eight developer-grade templates, tune colors, fonts and layout — live." },
               { icon: Download, t: "3. Export and publish", d: "Download a standalone site, a tidy ZIP, or a clean PDF. Host it anywhere." },
             ].map((s) => (
               <div key={s.t} className="rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/50">
@@ -92,7 +92,7 @@ export default function LandingPage() {
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-primary">Templates</p>
-            <h2 className="mt-2 text-2xl font-bold tracking-tight">Four templates. Zero filler.</h2>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight">Eight templates. Zero filler.</h2>
             <p className="mt-1 text-muted-foreground">Same data, four personalities. Switch anytime — nothing is lost.</p>
           </div>
           <Link href="/templates"><Button variant="outline" size="sm">See all templates <ArrowRight className="h-3.5 w-3.5" /></Button></Link>

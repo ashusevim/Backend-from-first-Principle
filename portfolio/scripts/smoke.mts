@@ -21,7 +21,7 @@ ok("missing ids get generated", parsePortfolio({ skills: [{ name: "TS" }] }).ski
 ok("emptyPortfolio valid", parsePortfolio(emptyPortfolio()).version === 1);
 
 console.log("generatePortfolioHtml:");
-for (const t of ["minimal", "developer", "modern", "terminal"] as const) {
+for (const t of ["minimal", "developer", "modern", "terminal", "editorial", "sidebar", "bento", "compact"] as const) {
   const s = samplePortfolio();
   s.design.template = t;
   const html = generatePortfolioHtml(s);

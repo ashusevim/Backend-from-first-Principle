@@ -193,6 +193,49 @@ function MiniPreview({ id, accent, dark }: { id: TemplateId; accent: string; dar
             <span className="block h-4 rounded-sm border" style={{ borderColor: line }} />
           </span>
         </span>
+      ) : id === "editorial" ? (
+        <span className="block px-1 pt-1" style={{ fontFamily: "'Source Serif 4', Georgia, serif", color: fg }}>
+          <span className="block text-[15px] font-bold leading-tight">Aa</span>
+          <span className="block text-[9px] italic" style={{ color: hex }}>Full-stack developer</span>
+          <span className="mt-1 block h-px" style={{ background: line }} />
+          <span className="mt-1 block h-1 w-full rounded-sm" style={{ background: line }} />
+          <span className="mt-0.5 block h-1 w-4/5 rounded-sm" style={{ background: line }} />
+        </span>
+      ) : id === "sidebar" ? (
+        <span className="grid h-full grid-cols-[26px_1fr] gap-1">
+          <span className="rounded-sm p-1" style={{ background: `${hex}22` }}>
+            <span className="mx-auto block h-3 w-3 rounded-full" style={{ background: hex }} />
+            <span className="mx-auto mt-1 block h-1 w-4 rounded-sm" style={{ background: line }} />
+            <span className="mx-auto mt-0.5 block h-1 w-4 rounded-sm" style={{ background: line }} />
+          </span>
+          <span className="space-y-1 pt-0.5">
+            <span className="block h-1.5 w-3/4 rounded-sm" style={{ background: fg }} />
+            <span className="block h-4 rounded-sm border" style={{ borderColor: line }} />
+            <span className="block h-4 rounded-sm border" style={{ borderColor: line }} />
+          </span>
+        </span>
+      ) : id === "bento" ? (
+        <span className="grid h-full grid-cols-3 gap-1">
+          <span className="col-span-2 rounded border p-1" style={{ borderColor: hex }}>
+            <span className="block h-1.5 w-2/3 rounded-sm" style={{ background: fg }} />
+            <span className="mt-1 block h-1 w-1/2 rounded-sm" style={{ background: line }} />
+          </span>
+          <span className="block rounded border" style={{ borderColor: line }} />
+          <span className="block rounded border" style={{ borderColor: line }} />
+          <span className="block rounded border" style={{ borderColor: line }} />
+          <span className="block rounded border" style={{ borderColor: line }} />
+        </span>
+      ) : id === "compact" ? (
+        <span className="block space-y-[3px] px-1 pt-1">
+          <span className="mx-auto block h-1.5 w-1/2 rounded-sm" style={{ background: fg }} />
+          <span className="mx-auto block h-1 w-2/3 rounded-sm" style={{ background: line }} />
+          <span className="block h-px" style={{ background: hex }} />
+          <span className="block h-1 w-full rounded-sm" style={{ background: line }} />
+          <span className="block h-1 w-full rounded-sm" style={{ background: line }} />
+          <span className="block h-1 w-4/5 rounded-sm" style={{ background: line }} />
+          <span className="block h-px" style={{ background: hex }} />
+          <span className="block h-1 w-full rounded-sm" style={{ background: line }} />
+        </span>
       ) : (
         <span className="block space-y-1.5 px-1 pt-1">
           <span className="block h-2.5 w-3/4 rounded-sm" style={{ background: fg }} />

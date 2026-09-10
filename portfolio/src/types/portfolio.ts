@@ -88,7 +88,7 @@ export const socialLinkSchema = z.object({
   label: z.string().max(60).default(""),
 });
 
-export const templateIds = ["minimal", "developer", "modern", "terminal"] as const;
+export const templateIds = ["minimal", "developer", "modern", "terminal", "editorial", "sidebar", "bento", "compact"] as const;
 export type TemplateId = (typeof templateIds)[number];
 
 export const designSchema = z.object({

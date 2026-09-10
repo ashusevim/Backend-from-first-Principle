@@ -15,7 +15,7 @@ npm run dev      # http://localhost:3100
 
 - **Builder** (`/builder`) — profile, about, skills, projects, experience,
   education, certifications, socials, design — with instant live preview
-- **4 templates** — Minimal, Developer, Modern, Terminal. One shared data model,
+- **8 templates** — Minimal, Developer, Modern, Terminal, Editorial, Sidebar, Bento, Compact. One shared data model,
   switching never loses content
 - **GitHub import** — avatar, bio + cherry-picked repositories via the public API
 - **Resume import** — best-effort PDF/TXT parsing, always review-before-publish
@@ -30,7 +30,7 @@ src/
 ├── app/            # /, /builder, /templates, /preview, /about
 ├── components/
 │   ├── builder/    # editor panels + live preview shell
-│   ├── templates/  # the 4 templates + shared shell/registry
+│   ├── templates/  # the 8 templates + shared shell/registry
 │   ├── landing/    # hero preview
 │   └── ui/         # shadcn-style primitives, toast, dialog
 ├── hooks/          # use-portfolio (state + autosave)
